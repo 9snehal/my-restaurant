@@ -63,7 +63,7 @@ Alternately, you can use Github to fork and clone the repository https://github.
 8.Log into the VM with vagrant ssh
 
 #How to run this project 
-1.Download or Clone this repository to your local drive: https://github.com/9snehal/Restaurants
+1.Download or Clone this repository to your local drive: https://github.com/9snehal/my-restaurant
 
 2.Copy this Restaurants folder into the FSND_Virtual_Machine/vagrant directory.
 
