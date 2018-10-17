@@ -1,0 +1,32 @@
+<html>
+<body>
+  {% extends "main.html" %}
+  {% block content %}
+  {% include "header.html" %}
+  <div class="container" >
+	 <div class="jumbotron" style="background-color:#660099">
+		 <h1 style="font-size:70px; text-align:center;color:DodgerBlue"><b> Restaurants </b></h1>
+	 </div>
+   <div class = 'flash'>
+             {% with messages = get_flashed_messages() %}
+         {% if messages %}
+
+           <ul>
+           {% for message in messages %}
+               <li> <strong> {{ message }} </strong> </li>
+           {% endfor %}
+           </ul>
+           {% endif %}
+       {% endwith %}
+
+ </div>
+ 	 	<div class="well">
+		{% for restaurant in restaurants %}
+	<p>	<h2 style="font-size:30px;color:Tomato"><a href = "{{url_for('showMenu', restaurant_id = restaurant.id)}}">{{restaurant.name}}</a></h2>
+  </br>
+	{% endfor %}
+    </div>
+	</div>
+{% endblock %}
+</body>
+</html>
