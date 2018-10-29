@@ -20,8 +20,9 @@ Implements oAuth using Google Sign-in API.
 ├── restaurantmenuwithusers.db
 ├── README.md
 ├── static
-    |__blank_user.gif
-│   └── style.css
+|    |__blank_user.gif
+|    |__top-banner.jpeg
+│    └── style.css
 └── templates
     ├── deletemenu.html
     ├── deleteRestaurant.html
